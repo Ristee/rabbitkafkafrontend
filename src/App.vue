@@ -8,7 +8,7 @@
         <router-view/>
       </main>
     </div>
-
+    <ApiStatus/>
     <footer>
       <div class="container">
         <hr/>
@@ -20,9 +20,11 @@
 
 <script>
 import NavLinks from "@/components/NavLinks";
+import ApiStatus from "@/components/ApiStatus";
 
 export default {
   components: {
+    ApiStatus,
     NavLinks
   }
 }
