@@ -6,9 +6,9 @@
     <div class="app-content">
       <main class="container">
         <router-view/>
+        <ApiStatus/>
       </main>
     </div>
-    <ApiStatus/>
     <footer>
       <div class="container">
         <hr/>
