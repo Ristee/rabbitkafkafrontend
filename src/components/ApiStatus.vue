@@ -1,6 +1,7 @@
 <template>
   <p v-if="name">
-    Using <span class="api-name">{{ name }}</span> version {{ version }}
+    Using <span class="api-name">{{ name }}</span> version {{ version }}<br>
+    URL: <a :href="axios.defaults.baseURL">{{ axios.defaults.baseURL }}</a>
   </p>
   <p v-else>
     Loading...
@@ -19,7 +20,7 @@ export default {
     }
   },
   mounted() {
-    axios.get('/api').then(response => {
+    axios.get('/').then(response => {
       this.name = response.data.name;
       this.version = response.data.version;
     })
