@@ -3,11 +3,12 @@
     <h5 class="my-0 mr-md-auto font-weight-normal">
       <router-link :to="{name: 'home'}">App name</router-link>
     </h5>
-    <router-link class="p-2 text-dark" :to="{name: 'about'}">About</router-link>
     <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="#">Sign In</a>
+      <router-link class="p-2 text-dark" :to="{name: 'home'}">Home</router-link>
+      <router-link class="p-2 text-dark" :to="{name: 'about'}">About</router-link>
+      <router-link class="p-2 text-dark" :to="{name: 'login'}">Log In</router-link>
+      <router-link class="btn btn-outline-primary" :to="{name: 'signup'}">Sign Up</router-link>
     </nav>
-    <a class="btn btn-outline-primary" href="#">Sign up</a>
   </div>
 </template>
 

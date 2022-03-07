@@ -6,7 +6,6 @@
     <div class="app-content">
       <main class="container">
         <router-view/>
-        <ApiStatus/>
       </main>
     </div>
     <footer>
@@ -20,19 +19,19 @@
 
 <script>
 import NavLinks from "@/components/NavLinks";
-import ApiStatus from "@/components/ApiStatus";
 
 export default {
   components: {
-    ApiStatus,
     NavLinks
   }
 }
 </script>
 
 <style lang="scss">
-@import "~bootstrap/dist/css/bootstrap.css";
+@import "assets/scss/variables";
+@import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-vue/dist/bootstrap-vue.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
 
 body {
   min-height: 85vh;
